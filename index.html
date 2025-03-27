@@ -148,5 +148,12 @@
 <script type="text/javascript" src="https://skeyll.net/scripts/main_old.js"></script>
 <script type="text/javascript">footer(1, "EN");</script>
 </div>
+<script>
+  fetch("https://skeyll.net/sidemenu.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("sidemenu").innerHTML = data;
+      });
+</script>
 </body>
 </html>
